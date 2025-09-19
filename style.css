@@ -19,6 +19,11 @@
     .slider-nav-btns{
        @apply p-2 rounded-full bg-gray-300
     }
+
+    .paragraph-style{
+
+        @apply w-screen max-w-full text-base md:text-lg lg:text-xl font-body text-gray-400 text-left xl:text-justify leading-relaxed tracking-wide
+    }
 }
 
 
