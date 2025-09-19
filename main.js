@@ -101,3 +101,35 @@ $(document).ready(function(){
 });
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  const menuBtn = document.getElementById("menu-btn");
+  const modal = document.getElementById("modal");
+
+  if (menuBtn && modal) {
+    const closeBtn = modal.querySelector(".close-icon");
+    const modalLinks = modal.querySelectorAll("a");
+
+    // Open mobile menu
+    menuBtn.addEventListener("click", () => {
+      modal.classList.remove("hidden");
+      document.body.classList.add("overflow-hidden");
+    });
+
+    // Close mobile menu
+    if (closeBtn) {
+      closeBtn.addEventListener("click", () => {
+        modal.classList.add("hidden");
+        document.body.classList.remove("overflow-hidden");
+      });
+    }
+
+    // Close menu when any link inside modal is clicked
+    modalLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        modal.classList.add("hidden");
+        document.body.classList.remove("overflow-hidden");
+      });
+    });
+  }
+});
+

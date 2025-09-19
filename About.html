@@ -18,7 +18,7 @@
                 <a href="#" class="text-xs md:text-xl text-[#6B3390] font-heading flex justify-center items-center gap-x-0.5 md:gap-x-5 "><img src="./images/Pathfinder_Logo-Flat_Small-removebg-preview.png" class="w-10 h-10 md:w-16 md:h-16" alt="pathfinder logo">YEC Pathfinder Club </a>
             </div>
 
-            <button class="w-12 h-12 lg:hidden  hamburger flex flex-col gap-1 items-center justify-center  cursor-pointer">
+            <button id="menu-btn" class="w-12 h-12 lg:hidden  hamburger flex flex-col gap-1 items-center justify-center  cursor-pointer">
                 <span class="w-8 h-0.5  hamburger-top  bg-black "></span>
                 <span class="w-8 h-0.5  hamburger-middle  bg-black "></span>
                 <span class="w-8 h-0.5 hamburger-bottom bg-black "></span>
@@ -37,6 +37,26 @@
 
 
     </header>
+
+    <div id="modal" class="min-w-screen w-full h-screen bg-black  z-10 mx-auto absolute top-0 left-0 hidden">
+            <div class="w-full p-10 h-full flex flex-col gap-y-10 items-center ">
+
+                <a href="./index.html" class="text-lg font-heading font-bold text-[#6B3390] hover:text-[#07BAED] px-5 py-3">Home</a>
+                <a href="./About.html" class="text-lg font-heading text-[#6B3390] hover:text-[#07BAED] px-5 py-3">About</a>
+                <a href="#" class="text-lg font-heading text-[#6B3390] hover:text-[#07BAED] px-5 py-3">Classes</a>
+                <a href="#" class="text-lg font-heading text-white hover:text-[#6B3390] px-5 py-3 bg-[#07BAED] hover:bg-white hover:border hover:border-[#07BAED] rounded-full  ">Contact</a>
+
+
+            </div>
+
+            <button class="close-icon w-8 h-8 flex justify-center items-center bg-white absolute right-[5%] top-[2%] rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+
+            </button>
+
+        </div>
     <main class="max-w-[90%] grow xl:w-full xl:max-w-[85%] flex flex-col  items-center mx-auto ">
        <div class="container w-screen max-w-full min-h-[400px] md:min-h-[600px] xl:h-[800px] flex flex-col lg:flex-row">
         <div class="img-container w-full lg:w-1/2 h-full  flex justify-center items-center">
@@ -47,7 +67,7 @@
 
         <div class="description w-full lg:w-1/2 h-full flex justify-center items-center ">
             <div class="description-container  min-w-full px-5 md:px-10 xl:px-10 flex flex-col justify-center items-center  ">
-                <p class="paragraph-style mb-5 md:mb-10">
+                <p class="paragraph-style mb-5 md:mb-10 pt-10 md:pt-10">
                     At Yokohama English Church, we are a warm and welcoming international community that embraces people from all walks of life -especially those who have left their home countries to build a life here in Japan. We exist to foster spiritual growth, community connection, and the love of God in the hearts of everyone we meet.
 
 
